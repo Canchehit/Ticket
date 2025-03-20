@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="590.0" prefWidth="731.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="sistemastickets.MenuController">
+    <stylesheets>
+        <URL value="@menu.css" />
+    </stylesheets>
+   <children>
+      <ToolBar layoutX="14.0" layoutY="91.0" prefHeight="160.0" prefWidth="1075.0">
+        <items>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callLista" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/list.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callGestionRoles" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/management%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callGestionarRoles" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/data-complexity%20-%20copia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callParametros" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/management.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callGesionTicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callFlujoTrabajo" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/suitcase.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callUsuarios" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/team.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="50.0" onMouseClicked="#callEstadosTicket" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imagenes/tickets.png" />
+               </image>
+            </ImageView>
+        </items>
+      </ToolBar>
+      <MenuBar layoutX="37.0" layoutY="14.0" prefHeight="31.0" prefWidth="210.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Acerca de ">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Salir">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
