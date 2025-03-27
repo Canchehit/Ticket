@@ -6,7 +6,9 @@ package sistemastickets;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 
 /**
  * FXML Controller class
@@ -15,9 +17,32 @@ import javafx.fxml.Initializable;
  */
 public class MenuController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+      @FXML
+    private Button butondepartamentos;
+
+    @FXML
+    private Button butongestionticket;
+
+    @FXML
+    private Button butonlista;
+
+    @FXML
+    private Button butonparametros;
+
+    @FXML
+    private Button butonrolesypermisos;
+
+    @FXML
+    private Button butonsalir;
+
+    @FXML
+    private Button butonticket;
+
+    @FXML
+    private Button butontrabajo;
+
+    @FXML
+    private Button butonusuarios;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
